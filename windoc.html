@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Assignment</title>
+    <style>
+        .s {
+            text-align: center;
+            color: green;
+            background-color: lightgreen;
+        }
+
+        table,
+        tr,
+        td {
+
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .t {
+            background-color: lightgreen;
+            height: 30px;
+            align-content: center;
+        }
+
+        a {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="s">
+        <h1>Windows Programming and scripting Language (613)</h1>
+        <h1>ASSIGNMENT-I</h1>
+    </div>
+    <h3>
+        <div class="t">
+            <a href="index.html">HOME</a>&nbsp;&nbsp;
+            <a href="htmldoc.html">HTML</a>&nbsp;&nbsp;
+            <a href="cssdoc.html">CSS</a>&nbsp;&nbsp;
+            <a href="jsdoc.html">JAVASCRIPT</a>&nbsp;&nbsp;
+            <a href="windoc.html">WINDOWS SCRIPTING</a>&nbsp;&nbsp;
+        </div>
+    </h3>
+    <div>
+        <h1> In this section</h1>
+        <ul text-size="100px">
+            <li><a href="#fundamental">Windows Fundamental</a></li>
+            <li><a href="#environment">The Windows Environment</a></li>
+            <li><a href="#definition">Some Definitions</a></li>
+            <li><a href="#applications">Designing c++ application</a></li>
+            <li><a href="#event">Event Driven Program</a></li>
+        </ul>
+
+    </div>
+    <div>
+        <h1> <a name="fundamental">Windows Fundamental </a> </h1>
+        <ul>
+            <li>Windows applications can be developed using a procedure -oriented approach oin either C or C++.</li>
+            <li>All approaches bring together point and shoot control, pop-up menus, and the ability to run applications
+                written especially for the Windows Environment. </li>
+            <li> Windows gives the ability to develop Graphics User Interface(GUI).</li>
+        </ul>
+        <h1><a name="environment"> The Windows Environment</a></h1>
+        <ul>
+            <li>Windows is a graphics-based multitasking operating system.</li>
+            <li>Programs developed for this environment have a consistent look and command structure.</li>
+            <li>To the user, this makes learning each successive Windows application easier.</li>
+            <li>To help in the development of Windows application. Windows provides numerous <b>built-in</b> functions
+                that allow for easy implementation of pop-up menus, scroll bars, dialog boxes, icons that represent a
+                user-friendly interface.</li>
+            <li>Windows permits the application to work in a hardware-independent manner.</li>
+        </ul>
+        <ul>
+            <li>Basically there are two fundamental different kinds of C++ applications, we can develop with visual C++:
+                <ol>
+                    <li> Application that natively execute on our computer. These applications are referred to as native
+                        C++ programs. We write native C++ program in the version of C++ that is defined
+                        by ISO/ANSI language standard.</li>
+                    <li>We can also write applications to run under the control of the CLR in an extended
+                        version of C++, called C++/CLI. These Programs are referred to as CLR program or
+                        C++/CLI Program.</li>
+                </ol>
+            </li>
+            <li>The .Net framework is not strictly part of visual C++, but rather a component of the
+                windows operating system that makes it easier to build Software(s/w) application.</li>
+            <li>Advantage of .Net Framework:
+                Code Reliability(Fault Tolerance), Security, and Ability to integrate C++ code with other
+                languages that targets the .Net framework.</li>
+        </ul>
+        <h1> <a name="definition">Some Definitions</a></h1>
+        <ul>
+            <li>
+                <h4>Common Language Runtime(CLR): </h4>
+            </li>The CLR is a standardized-environment for execution of program written in a wide-range of
+            high-level languages including visual C++.
+            <h5>Important :</h5>
+            <ol>
+                <li>The specification of the CLR is standardized by European Computer
+                    Manufacturer (ECMA) standard for the Common Language Infrastructure (CLI), and CLR is an
+                    implementation of that standard for Microsoft Windows.</li>
+                <li>
+                    That is why C++ for CLR is referred to as C++/CLI, as it is the implementation of
+                    specification of CLI by CLR.
+                </li>
+            </ol>
+
+            <li>
+                <h4>Common Language Infrastructure(CLI): </h4>
+            </li>
+            The CLI is a specification for a Virtual Machine environment that enables applications
+            written in diverse high-level programming language to be executed in different system
+            environment, without changing or recompiling the original source code.
+            <ol>
+                <li>The CLI specifies a standard intermediate language for the virtual machine to which the
+                    high-level language code is compiled. With .Net framework, this intermediate language is
+                    called Microsoft Intermediate Language(MSIL). The code in the intermediate language is
+                    ultimately mapped to machine code by a Just-In-Time(JIT) compiler, when we execute the
+                    program.</li>
+                <li>Code in the CLI intermediate language can be executed within any other environment
+                    that has a CLI implementation.</li>
+                <li>The CLI also defines a common set of data types called the Common Type System(CTS), that
+                    should be used for program written in any programming language targeting a CLI
+                    implementation.</li>
+                <li>The CTS specifies how data types are used within the CLR and includes a set of
+                    predefined types. We can Create our own datatypes, but that must be consistent with
+                    CTS.</li>
+            </ol>
+        </ul>
+        <h1> <a name="applications">Designing C++ Application</a></h1>
+        <ul>
+            <li>
+                <h4>Console Application:</h4> Command line character-based program. Two ways of writing console
+                application:
+                <ul>
+                    <li>Win32 Console applications, compile to native code. (way we have seen so far).</li>
+                    <li>CLR Console application.</li>
+                </ul>
+            </li>
+            <li>
+                <h4>Windows Application: </h4> GUI based program. Three ways of constructing windows application:
+                <ul>
+                    <li>Using Windows Operating System API.</li>
+                    <li>This will enable us to understand how a windows application works behind the scene.This is the
+                        fundamental interface that the windows operating system provides for
+                        communications between itself and the applications that are executing under its
+                        control.</li>
+                    <li>Using Microsoft Foundation Class (MFC): Set of classes that encapsulates the Windows
+                        operating system API for GUI creation and program development.</li>
+                </ul>
+            </li>
+        </ul>
+        <img src="as3.png"></img>
+        <h1><a name="event">Event-Driven Program:</a></h1>
+        <img src="as4.png"></img>
+    </div>
+</body>
+
+</html>
