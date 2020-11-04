@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 613</title>
+    <link rel="stylesheet" href="../CSS/edit.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Windows Programming and Scripting Language(613)</h1>
+        <h1> ASSIGNMENT-I</h1>
+        <h3>
+            <ul>
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="htmldoc.html">HTML</a></li>
+                <li><a href="cssdoc.html">CSS</a></li>
+                <li><a href="jsdoc.html">JAVASCRIPT</a></li>
+                <li><a href="windoc.html">WINDOWS</a></li>
+            </ul>
+        </h3>
+    </div>
+    <div style="padding-left: 10px;">
+        <h1> In this section</h1>
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#whyUse">Why use CSS?</a></li>
+            <li><a href="#syntax">CSS Syntax</a></li>
+            <li><a href="#selector">CSS Selector</a></li>
+        </ul>
+
+    </div>
+    <div>
+        <h1> <a name="introduction">CSS Introduction</a> </h1>
+        <ul>
+            <li>CSS stands for Cascading Style Sheets.</li>
+            <li>CSS describes how HTML elements are to be displayed on screen, paper, or in other media.</li>
+            <li>CSS saves a lot of work. It can control the layout of multiple web pages all at once
+                External stylesheets are stored in CSS files.</li>
+        </ul>
+        <h1><a name="whyUse">Why Use CSS?</a></h1>
+        <ul>
+            <li><b><u>CSS saves time :</u></b></li> You can write CSS once and reuse same sheet in multiple HTML pages.
+            <li><b><u>Easy Maintainence :</u></b></li> To make a global change simply change the style, and all elements
+            in all the webpages will be updated automatically.
+            <li><b><u>Search Engines :</u></b></li> CSS is considered as clean coding technique, which means search
+            engines won’t have to struggle to “read” its content.
+            <li><b><u>Superior styles to HTML :</u></b></li> CSS has a much wider array of attributes than HTML, so you
+            can give a far better look to your HTML page in comparison to HTML attributes.
+            <li><b><u>Offline Browsing :</u></b></li> CSS can store web applications locally with the help of offline
+            catche.Using of this we can view offline websites.
+            <li>CSS is used to define styles for your web pages, including the design, layout and variations in display
+                for different devices and screen sizes. </li>
+        </ul>
+        <h1><a name="syntax">CSS Syntax</a></h1>
+        <ul>
+            <li>A CSS comprises of style rules that are interpreted by the browser and then applied to the corresponding
+                elements in your document.</li>
+            <li>A style rule set consists of a selector and declaration block.</li>
+
+            <div class="output">
+                <h3>Selector => p<br>
+                    declaration => {color:blue, font-size:12px;}</h3>
+            </div>
+            <li>The selector points to the HTML element you want to style.</li>
+            <li>The declaration block contains one or more declarations separated by semicolons.</li>
+            <li>Each declaration includes a CSS property name and a value, separated by a colon.</li>
+            For Example:
+            -> color is property and blue is value.
+            -> font size is property and 12px is value.
+
+            <li>A CSS declaration always ends with a semicolon, and declaration blocks are surrounded by curly braces.
+            </li>
+
+            <br>
+            <div class="output">
+                Example:<b> <span style="color:black">body {
+                        background-color: lightblue;
+                        },
+                        <br><br>
+                        h1 {
+                        color: white;
+                        text-align: center;
+                        },
+                        <br><br>
+                        p {
+                        font-family: verdana;
+                        font-size: 20px;
+                        }
+                    </span></b></div>
+            <br>
+            <li>CSS Saves a Lot of Work!</li>
+            <br>
+            <li>The style definitions are normally saved in external .css files.
+
+                With an external stylesheet file, you can change the look of an entire website by changing just one
+                file!</li>
+        </ul>
+        <h1><a name="selector">CSS Seclector</a></h1>
+        <ol>
+            <li><b><u>The Universal Selector:</u></b> Rather than selecting elements of a specific type, the
+            universal selector quite simply matches the name of any element type.</li>
+            Ex.
+            <pre>           *{
+                color: red;
+            }
+            </pre>
+            <li><b><u>The Element Selector: </u></b>: The element selector selects elements based on the element name. You can select all p elements on a page like this (in this case, all p elements will be center-aligned, with a red text color).</li>
+            EX.
+            <pre>           p { 
+                text-align: center; 
+                color: red; 
+            } </pre>
+            <li><u><b>The Descending Selector:</b></u>Suppose you want to apply a style rule to a particular element only when it lies inside a particular element. As given in the following example, style rule will apply to em element only when it lies inside ul tag.</li>
+            EX.
+            <pre>           ul em { 
+                color: #000000;  
+            }            </pre>
+            <li><b><u>The Id selector: </u></b></li>
+            <ul>
+                <li>The id selector uses the id attribute of an HTML element to select a specific element.</li>
+                <li>The id of an element should be unique within a page, so the id selector is used to select one unique element!</li>
+                <li>To select an element with a specific id, write a hash (#) character, followed by the id of the element.</li>
+                <li>The style rule below will be applied to the HTML element with id=”para1″:</li>
+            </ul>
+            <pre>           #para1 { 
+                text-align: center; 
+                color: red; 
+            }</pre>
+            <li><u><b>The Class Selector: </b></u></li>
+            <ul>
+                <li>The class selector selects elements with a specific class attribute.</li>
+                <li>To select elements with a specific class, write a period (.) character, followed by the name of the class.</li>
+                <li>In the example below, all HTML elements with class=”center” will be red and center-aligned:</li>
+            </ul>
+            <pre>           .center { 
+                text-align: center; 
+                color: red; 
+            }</pre> 
+        </ol>
+
+    </div>
+
+
+</body>
+
+</html>
